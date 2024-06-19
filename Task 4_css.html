@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .sidenav {
+            height: 100vh;
+            width: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff; /* Set background to white to remove black border effect */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 20px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            width: 200px;
+            border-radius: 4px;
+        }
+
+        .green { background-color: #4CAF50; }
+        .green:hover { background-color: #4CAF50; }
+
+        .blue { background-color: #2196F3; }
+        .blue:hover { background-color: #2196F3; }
+
+        .red { background-color: #f44336; }
+        .red:hover { background-color: #f44336; }
+
+        .gray { background-color: #555; }
+        .gray:hover { background-color: #555; }
+
+        .main {
+            margin-left: 250px; /* Increase margin to prevent overlap */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="#" class="green"></a>
+    <a href="#" class="blue"></a>
+    <a href="#" class="red"></a>
+    <a href="#" class="gray"></a>
+</div>
+
+<div class="main">
+    <h1>Hoverable Sidenav Buttons</h1>
+    <p>Hover over the buttons in the left side navigation to open them.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Styled Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #d4df37;
+            color: #5c2751;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .sidebar {
+            float: left;
+            width: 160px;
+            margin-right: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            width: 140px;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: white;
+            color: #5c2751;
+            text-decoration: none;
+            border-right: 20px solid black;
+        }
+
+        .sidebar a:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            margin-left: 200px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-style: italic;
+        }
+
+        .footer:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #5c2751;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <a href="#">Home page</a>
+    <a href="#">Musings</a>
+    <a href="#">My town</a>
+    <a href="#">Links</a>
+</div>
+
+<div class="content">
+    <div class="header">My first styled page</div>
+    <p>Welcome to my styled page!</p>
+    <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+    <p>There should be more here, but I don't know what yet.</p>
+    <div class="footer">
+        Made 5 April 2004 by myself.
+    </div>
+</div>
+
+</body>
+</html>
